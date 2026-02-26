@@ -5,7 +5,7 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
 export default ({ env }) => ({
   upload: {
     config: {
-      provider: 'aws-s3',
+      provider: '@strapi/provider-upload-aws-s3',
       providerOptions: {
         s3Options: {
           credentials: {
