@@ -21,10 +21,13 @@
     "hostName":    { "type": "string", "required": true },
     "hostBio":     { "type": "text" },
     "hostPhoto": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images"]
+  "type": "media",
+  "multiple": false,
+  "required": false,
+  "allowedTypes": [
+    "images"
+  ]
+}
     },
     "painPoints": {
       "type": "component",
