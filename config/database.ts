@@ -10,7 +10,8 @@ export default ({ env }) => {
         ? {
             connectionString,
             ssl: { rejectUnauthorized: false },
-          }
+          },
+          acquireConnectionTimeout: 60000,},
         : {
             host: env('DATABASE_HOST', '127.0.0.1'),
             port: env.int('DATABASE_PORT', 5432),
