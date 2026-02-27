@@ -49,4 +49,3 @@
     "seoTitle":       { "type": "string" },
     "seoDescription": { "type": "text" }
   }
-}
