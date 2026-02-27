@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "masterclasses",
+  "info": {
+    "singularName": "masterclass",
+    "pluralName": "masterclasses",
+    "displayName": "Masterclass",
+    "description": "Executive Presence Blueprint masterclass configuration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "programName": { "type": "string", "required": true },
+    "tagline":     { "type": "text",   "required": true },
+    "date":        { "type": "date",   "required": true },
+    "time":        { "type": "string", "required": true },
+    "duration":    { "type": "string", "default": "2 Hours" },
+    "price":       { "type": "decimal","required": true },
+    "currency":    { "type": "string", "default": "₹" },
+    "hostName":    { "type": "string", "required": true },
+    "hostBio":     { "type": "text" },
+    "hostPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "painPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "masterclass.text-item"
+    },
+    "outcomes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "masterclass.text-item"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "masterclass.faq"
+    },
+    "ctaLabel":    { "type": "string", "default": "Reserve Your Seat" },
+    "checkoutUrl": { "type": "string", "required": true },
+    "seoTitle":       { "type": "string" },
+    "seoDescription": { "type": "text" }
+  }
+}

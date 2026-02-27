@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_masterclass_text_items",
+  "info": {
+    "displayName": "Text Item",
+    "description": "A single text entry (pain point, outcome, etc.)"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
