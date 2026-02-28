@@ -28,6 +28,7 @@ export default [
             'blob:',
             'market-assets.strapi.io',
             '*.r2.cloudflarestorage.com', // Allows your R2 images to show
+            'pub-f375394ca02f40d18bb1daf616854eef.r2.dev',
           ],
           'media-src': [
             "'self'",
@@ -35,6 +36,7 @@ export default [
             'blob:',
             'market-assets.strapi.io',
             '*.r2.cloudflarestorage.com',
+            'pub-f375394ca02f40d18bb1daf616854eef.r2.dev',
           ],
           upgradeInsecureRequests: null,
         },
