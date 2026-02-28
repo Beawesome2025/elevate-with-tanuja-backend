@@ -45,7 +45,7 @@
       "component": "masterclass.faq"
     },
     "ctaLabel":    { "type": "string", "default": "Reserve Your Seat" },
-    "checkoutUrl": { "type": "string", "required": true },
+    "checkoutUrl": { "type": "string", "required": false },
     "seoTitle":       { "type": "string" },
     "seoDescription": { "type": "text" }
   }
