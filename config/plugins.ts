@@ -15,6 +15,22 @@ export default ({ env }) => ({
         params: {
           Bucket: env('CF_BUCKET'),
         },
+        // Ensure this is set to true if your provider supports it
+  s3ForcePathStyle: true,
+  signatureVersion: 'v4',
+      },
+      actionOptions: {
+        upload: {},
+        uploadStream: {},
+        delete: {},
+      },
+      // ADD THIS SECTION:
+      breakpoints: {
+        xlarge: 1920,
+        large: 1000,
+        medium: 750,
+        small: 500,
+        xsmall: 64,
       },
     },
   },
