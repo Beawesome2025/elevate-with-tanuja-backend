@@ -479,12 +479,16 @@ export interface ApiMasterclassMasterclass extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    checkoutUrl: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    ctaLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Reserve Your Seat'>;
     currency: Schema.Attribute.String & Schema.Attribute.DefaultTo<'\u20B9'>;
     date: Schema.Attribute.Date & Schema.Attribute.Required;
     duration: Schema.Attribute.String & Schema.Attribute.DefaultTo<'2 Hours'>;
+    faqs: Schema.Attribute.Component<'masterclass.faq', true>;
     hostBio: Schema.Attribute.Text;
     hostName: Schema.Attribute.String & Schema.Attribute.Required;
     hostPhoto: Schema.Attribute.Media<'images'>;
@@ -494,9 +498,13 @@ export interface ApiMasterclassMasterclass extends Struct.CollectionTypeSchema {
       'api::masterclass.masterclass'
     > &
       Schema.Attribute.Private;
+    outcomes: Schema.Attribute.Component<'masterclass.text-item', true>;
+    painPoints: Schema.Attribute.Component<'masterclass.text-item', true>;
     price: Schema.Attribute.Decimal & Schema.Attribute.Required;
     programName: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    seoDescription: Schema.Attribute.Text;
+    seoTitle: Schema.Attribute.String;
     tagline: Schema.Attribute.Text & Schema.Attribute.Required;
     time: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
