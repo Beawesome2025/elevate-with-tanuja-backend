@@ -21,7 +21,7 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'http:', 'https:'],
+          'connect-src': ["'self'", 'http:', 'https:', 'pub-f375394ca02f40d18bb1daf616854eef.r2.dev'],
           'img-src': [
             "'self'",
             'data:',
