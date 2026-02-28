@@ -25,12 +25,13 @@ export default ({ env }) => ({
         delete: {},
       },
       // ADD THIS SECTION:
+      sizeLimit: 1000000,
       breakpoints: {
-        xlarge: 1920,
-        large: 1000,
-        medium: 750,
-        small: 500,
-        xsmall: 64,
+        xlarge: null,
+        large: null,
+        medium: null,
+        small: null,
+        xsmall: null,
       },
     },
   },
