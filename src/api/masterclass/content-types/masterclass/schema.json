@@ -12,22 +12,19 @@
   },
   "attributes": {
     "programName": { "type": "string", "required": true },
-    "tagline":     { "type": "text",   "required": true },
-    "date":        { "type": "date",   "required": true },
-    "time":        { "type": "string", "required": true },
-    "duration":    { "type": "string", "default": "2 Hours" },
-    "price":       { "type": "decimal","required": true },
-    "currency":    { "type": "string", "default": "₹" },
-    "hostName":    { "type": "string", "required": true },
-    "hostBio":     { "type": "text" },
+    "tagline": { "type": "text", "required": true },
+    "date": { "type": "date", "required": true },
+    "time": { "type": "string", "required": true },
+    "duration": { "type": "string", "default": "2 Hours" },
+    "price": { "type": "decimal", "required": true },
+    "currency": { "type": "string", "default": "₹" },
+    "hostName": { "type": "string", "required": true },
+    "hostBio": { "type": "text" },
     "hostPhoto": {
-  "type": "media",
-  "multiple": false,
-  "required": false,
-  "allowedTypes": [
-    "images"
-  ]
-}
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     },
     "painPoints": {
       "type": "component",
@@ -44,8 +41,9 @@
       "repeatable": true,
       "component": "masterclass.faq"
     },
-    "ctaLabel":    { "type": "string", "default": "Reserve Your Seat" },
+    "ctaLabel": { "type": "string", "default": "Reserve Your Seat" },
     "checkoutUrl": { "type": "string", "required": false },
-    "seoTitle":       { "type": "string" },
+    "seoTitle": { "type": "string" },
     "seoDescription": { "type": "text" }
   }
+}
